@@ -1,11 +1,7 @@
 import 'package:auth/auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_intership/model/Dtabase.dart';
-import 'package:flutter_intership/model/seller_model.dart';
-import 'package:flutter_intership/screen/Selleraddproduct.dart';
 import 'package:flutter_intership/screen/Sellerhome.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 
 class Seller_Detail extends StatefulWidget {
   const Seller_Detail({Key? key}) : super(key: key);
@@ -220,9 +216,6 @@ class _Seller_DetailState extends State<Seller_Detail> {
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 40, 37, 37),
         elevation: 0.0,
-        // leading: IconButton(onPressed: (){
-        //   Navigator.of(context).pop();
-        // }, icon: const Icon(Icons.arrow_back,color:Colors.red)),
         title: const Text("Seller Details"),
         centerTitle: true,
       ),
@@ -285,39 +278,6 @@ class _Seller_DetailState extends State<Seller_Detail> {
       ),
     );
   }
-  // void registerNow(String email,String password)async{
-  //   if(formkey.currentState!.validate()){
-  //     await _auth.createUserWithEmailAndPassword(email: email,password:password).then((value)=>{
-  //       postDetailsToFirebases()
-  //     }).catchError((e){
-  //       Fluttertoast.showToast(msg: e!.message);
-  //     });
-
-  //   }
-  // }
-  // postDetailsToFirebases() async{
-  //   //calling our firestore
-  //   //calling our user model
-  //   //sending these values
-  //   FirebaseFirestore firebaseFirestore=FirebaseFirestore.instance;
-  //   User? user=_auth.currentUser;
-  //   SellerModel sellerModel=SellerModel();
-  //   sellerModel.email=user!.email;
-  //   sellerModel.uid=user.uid;
-  //   sellerModel.name=nameEditingController.text;
-  //   sellerModel.buisnessName=buisnessNameEditingController.text;
-  //   sellerModel.city=cityEditingController.text;
-  //   sellerModel.category=categoryEditingController.text;
-
-  //   await firebaseFirestore
-  //   .collection("Seller")
-  //   .doc(user.uid)
-  //   .set(sellerModel.toMap());
-  //   Fluttertoast.showToast(msg: "Register successfully :)");
-  //   Navigator.push((context), MaterialPageRoute(builder: (context)=>const AddProduct()));
-
-
-  // }
 }
 
 
