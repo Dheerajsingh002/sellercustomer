@@ -38,7 +38,7 @@ class SellerProduct extends StatelessWidget {
 
             title:Text(x['name'],style:TextStyle(fontSize:25,color:Colors.white,fontWeight:FontWeight.bold)),
 
-            subtitle:Text('Brand:-${x['brand']} \nSeller:-$Email',style:TextStyle(fontSize:15,color:Colors.white,fontWeight:FontWeight.bold)),
+            subtitle:Text('Brand:-${x['brand']} \nseller:-$Email',style:TextStyle(fontSize:15,color:Colors.white,fontWeight:FontWeight.bold)),
 
           trailing:TextButton(
             onPressed: (){
