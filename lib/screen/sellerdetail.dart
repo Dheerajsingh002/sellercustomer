@@ -181,21 +181,32 @@ class _Seller_DetailState extends State<Seller_Detail> {
              autofocus: false,
           
               decoration: InputDecoration(
-                suffixIcon: DropdownButton(
-                  value:Dvalue,
-                  icon:const Icon(Icons.keyboard_arrow_down), 
-                  items: items.map((String items) {
-                return DropdownMenuItem(
-                  value: items,
-                  child: Text(items),
-                );
+                suffixIcon: Container(
+                  margin: const EdgeInsets.all(8),
+                   decoration: BoxDecoration(
+               borderRadius: BorderRadius.circular(50),
+            
+        ),
+
+                  child: DropdownButton(
+                    elevation: 6,
+                    borderRadius: BorderRadius.circular(60),
+                    dropdownColor: Colors.redAccent,
+                    value:Dvalue,
+                    icon:const Icon(Icons.keyboard_arrow_down), 
+                    items: items.map((String items) {
+                  return DropdownMenuItem(
+                    value: items,
+                    child: Text(items),
+                  );
               }).toList(),
               onChanged: (String? newValue) {
-                setState(() {
-                  Dvalue = newValue!;
-                  categoryEditingController.text=Dvalue;
-                });
+                  setState(() {
+                    Dvalue = newValue!;
+                    categoryEditingController.text=Dvalue;
+                  });
               },),
+                ),
               
                 // labelText: "Category",
                 contentPadding: const EdgeInsets.fromLTRB(20, 15, 20, 15),

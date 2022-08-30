@@ -113,6 +113,7 @@ class _AddProductState extends State<AddProduct> {
           
               decoration: InputDecoration(
                 suffixIcon: DropdownButton(
+                  elevation: 7,
                   value:Dvalue,
                   icon:const Icon(Icons.keyboard_arrow_down), 
                   items: items.map((String items) {
