@@ -10,7 +10,7 @@
 -> Use a dropdown at the time of signup/sign-in and store it in local storage throughout. This local memory should persist, unless exclusively cleared by the user or the app is uninstalled
 
 # Application Ui
-<div>
+<div style="display:flex,flex-direction:row">
 <img src="https://user-images.githubusercontent.com/94373786/187464860-88276a9d-1162-4838-a44e-96ee5957655c.jpeg" width="300" height="400">
 <img src="https://user-images.githubusercontent.com/94373786/187464928-631c66be-1442-467d-a59b-bb5415271ff6.jpeg" width="300" height="400">
 <img src="https://user-images.githubusercontent.com/94373786/187464977-0d57cad1-571a-414c-a6cf-cd573fe3ac2d.jpeg" width="300" height="400">
