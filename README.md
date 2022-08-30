@@ -1,4 +1,14 @@
 # flutter_intership
+
+# Task
+  Build a flutter app with very basic UI and the following features:
+1.	Authentication (Signup and Sign-in with email): There are 2 types of users, seller and customer. Email of the user should be verified (firebase offers this functionality inbuilt). Upon successful verification of email, you should create a Firestore document in the collection of sellers or customers, whatever is the type of user. Fields to be stored for customer: Name, city, zip code, age (let him enter dob, but you should store his/her age), Gender, email and for seller: Name, Business Name, category (Electronics, consumer durables, etc), city, email, phone 
+2.	Sellers should get an option to add a new product. In the post product form, take the following parameters: Brand, Category (dropdown), Name, Price (Number).
+3.	Home Screen: Customers in his home screen should see all products, sellers in his home screen should see only the products posted by him.
+4.	The customer should be able to apply price filters on products. Note: These filters should be implemented using firestore queries, not handled on the frontend
+* How to know if the user is registering as a seller or customer?
+-> Use a dropdown at the time of signup/sign-in and store it in local storage throughout. This local memory should persist, unless exclusively cleared by the user or the app is uninstalled
+
 # Application Ui
 <div>
 <img src="https://user-images.githubusercontent.com/94373786/187464860-88276a9d-1162-4838-a44e-96ee5957655c.jpeg" width="300" height="400">
